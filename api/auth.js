@@ -20,7 +20,8 @@ module.exports = app => {
                 res.json({
                     name: usuario.name,
                     email: usuario.email,
-                    token: jwt.encode(payload,authSecret)
+                    token: jwt.encode(payload,authSecret),
+                    admin: usuario.admin
                 })
             })
         } else {
