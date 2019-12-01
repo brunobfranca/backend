@@ -5,4 +5,5 @@ module.exports = app => {
     app.get('/pecas', app.api.pecas.lista)
     app.post('/salvarPeca', app.api.pecas.salvar)
     app.get('/servicos' , app.api.servico.lista)
+    app.post('/salvarServico' , app.api.servico.salvar)
 }
